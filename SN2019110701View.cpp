@@ -163,3 +163,4 @@ void CSN2019110701View::OnReverseImg()
 	Invalidate(FALSE);
 }
 
+
