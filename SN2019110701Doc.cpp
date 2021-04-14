@@ -59,6 +59,8 @@ void CSN2019110701Doc::Serialize(CArchive& ar)
 	if (ar.IsStoring())
 	{
 		// TODO: 여기에 저장 코드를 추가합니다.
+
+		//2021.04.06
 		ar.Write(m_OutImg, 256 * 256);
 	}
 	else
@@ -143,3 +145,29 @@ void CSN2019110701Doc::Dump(CDumpContext& dc) const
 
 
 // CSN2019110701Doc 명령
+
+
+void CSN2019110701Doc::TwoImgLoad()
+{
+	// TODO: 여기에 구현 코드 추가.
+
+	//2021.04.13
+	CFile file;
+	CFileDialog opendlg1(TRUE); //공통 대화상자(첫 번째 파일 오픈)
+	if (opendlg1.DoModal() == IDOK)
+	{
+		//첫 번째 이미지 읽기
+		file.Open(opendlg1.GetPathName(), CFile::modeRead);  //GetFileName는 윈도우xp, GetPathName는 윈도우7
+		file.Read(m_InImg1, sizeof(m_InImg1));
+		file.Close();
+	}
+
+	CFileDialog opendlg2(TRUE); //공통 대화상자(두 번째 파일 오픈)
+	if (opendlg2.DoModal() == IDOK)
+	{
+		//두 번째 이미지 읽기
+		file.Open(opendlg2.GetPathName(), CFile::modeRead);
+		file.Read(m_InImg2, sizeof(m_InImg2));
+		file.Close();
+	}
+}

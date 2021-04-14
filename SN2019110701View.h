@@ -45,7 +45,22 @@ protected:
 	afx_msg void OnContextMenu(CWnd* pWnd, CPoint point);
 	DECLARE_MESSAGE_MAP()
 public:
+	//2021.04.06
 	afx_msg void OnReverseImg();
+
+	//2021.04.13
+	BITMAPINFO *BmInfo;
+	int height;
+	int width;
+	unsigned char m_RevImg[256][256];
+	afx_msg void OnConstAdd();
+	afx_msg void OnConstSub();
+	afx_msg void OnConstMul();
+	afx_msg void OnConstDiv();
+	afx_msg void OnFrmAdd();
+	afx_msg void OnFrmSub();
+	afx_msg void OnFrmMul();
+	afx_msg void OnLutMul();
 };
 
 #ifndef _DEBUG  // SN2019110701View.cpp의 디버그 버전

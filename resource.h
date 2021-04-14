@@ -1,6 +1,6 @@
-ï»¿//{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ì—ì„œ ìƒì„±í•œ í¬í•¨ íŒŒì¼ì…ë‹ˆë‹¤.
-// SN2019110701.rcì—ì„œ ì‚¬ìš©ë˜ê³  ìˆìŠµë‹ˆë‹¤.
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++¿¡¼­ »ı¼ºÇÑ Æ÷ÇÔ ÆÄÀÏÀÔ´Ï´Ù.
+// SN2019110701.rc¿¡¼­ »ç¿ëµÇ°í ÀÖ½À´Ï´Ù.
 //
 #define IDD_ABOUTBOX                    100
 #define IDP_OLE_INIT_FAILED             100
@@ -32,13 +32,22 @@
 #define IDS_EDIT_MENU                   306
 #define ID_Menu                         32771
 #define IDM_REVERSE_IMG                 32772
+#define IDM_CONST_ADD                   32773
+#define IDM_CONST_SUB                   32774
+#define IDM_CONST_MUL                   32775
+#define IDM_CONST_DIV                   32776
+#define ID_32777                        32777
+#define IDM_FRM_ADD                     32778
+#define IDM_FRM_SUB                     32779
+#define IDM_FRM_MUL                     32780
+#define IDM_LUT_MUL                     32781
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        310
-#define _APS_NEXT_COMMAND_VALUE         32773
+#define _APS_NEXT_COMMAND_VALUE         32782
 #define _APS_NEXT_CONTROL_VALUE         1000
 #define _APS_NEXT_SYMED_VALUE           310
 #endif

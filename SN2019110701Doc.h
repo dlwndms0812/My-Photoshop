@@ -48,4 +48,7 @@ protected:
 public:
 	unsigned char m_InImg[256][256];
 	unsigned char m_OutImg[256][256];
+	unsigned char m_InImg1[256][256];
+	unsigned char m_InImg2[256][256];
+	void TwoImgLoad();
 };
